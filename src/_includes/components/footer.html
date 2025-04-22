@@ -6,498 +6,542 @@
 
 
 <style>
-    /*-- -------------------------- -->
+  /*-- -------------------------- -->
 <---          Footer            -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cs-footer-1763 {
-    padding: var(--sectionPadding);
+#cs-footer-1763 {
+  padding: var(--sectionPadding);
 
-    padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
-    /* change this to match the color of the section above the footer */
-    background-color: #fff;
-    overflow: hidden;
-    /* 30px - 50px */
-    position: relative;
-    z-index: 1;
-  }
-  #cs-footer-1763 .cs-card-group {
-    /* reset on tablet */
-    max-width: 34.375rem;
-    margin: 30px auto;
-    /* 60px - 100px*/
-    padding: 0 0 clamp(3.75rem, 7vw, 6.25rem) 0;
-    display: grid;
-    /* 20px - 58px */
-    gap: clamp(1.25rem, 4vw, 3.625rem);
-  }
-  #cs-footer-1763 .cs-card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    /* 16px - 24px */
-    gap: clamp(1rem, 2vw, 1.5rem);
-  }
-  #cs-footer-1763 .cs-picture {
-    padding: 1.5rem;
-    background-color:#1763C2;
-    display: block;
-    border-radius: 5px;
-  }
-  #cs-footer-1763 .cs-icon {
-    width: 2rem;
-    height: auto;
-    display: block;
-  }
-  #cs-footer-1763 .cs-h3 {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 2vw, 1.5625rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    margin: 0;
-    color: var(--headerColor);
-  }
-  #cs-footer-1763 .cs-card-info {
-    font-size: 1rem;
-    text-decoration: none;
-    line-height: 1.5em;
-    color: var(--bodyTextColor);
-    display: block;
-  }
-  #cs-footer-1763 .cs-container {
-    width: 100%;
-    /* reset on tablet */
-    max-width: 34.375rem;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    /* 32px - 48px */
-    gap: clamp(2rem, 7vw, 3rem);
-  }
-  #cs-footer-1763 .cs-logo-group {
-    /* takes up all the space, lets the other ul's wrap below it */
-    width: 100%;
-    position: relative;
-    border-radius: 5px;
-  }
-  #cs-footer-1763 .cs-logo {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    margin: 0 0 1rem 0;
-    display: block;
-  }
-  #cs-footer-1763 .cs-text {
-    max-width: 44rem;
-    /* 24px - 40px */
-    margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
-    opacity: 0.8;
-  }
-  #cs-footer-1763 .cs-logo-img {
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-  }
-  #cs-footer-1763 .cs-contact {
-    display: grid;
-    gap: 2rem;
-  }
-  #cs-footer-1763 .cs-topper {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-  #cs-footer-1763 .cs-contact-link {
-    font-size: 1.25rem;
-    font-weight: 700;
-    line-height: 1.2em;
-    text-decoration: none;
-    color: var(--headerColor);
-  }
-  #cs-footer-1763 .cs-header {
-    /* 20px - 25px */
-    font-size: clamp(1.25rem, 3vw, 1.5625rem);
-    font-weight: 700;
-    line-height: 1.5em;
-    /* 16px - 24px */
-    margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0;
-    color: var(--headerColor);
-    display: block;
-    position: relative;
-  }
-  #cs-footer-1763 .cs-ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-  #cs-footer-1763 .cs-li {
-    list-style: none;
-  }
-  #cs-footer-1763 .cs-link {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-align: left;
-    text-decoration: none;
-    color: var(--bodyTextColor);
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    transition: color 0.3s;
-  }
-  #cs-footer-1763 .cs-link:hover {
-    color: var(--primaryLight);
-  }
-  #cs-footer-1763 .cs-bottom {
-    width: 100%;
-    max-width: 80rem;
-    /* 60px - 80px */
-    margin: clamp(3.75rem, 7vw, 5rem) auto 0;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--border-border-10, #e8e8e8);
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-  #cs-footer-1763 .cs-credit,
-  #cs-footer-1763 .cs-bottom-link,
-  #cs-footer-1763 .cs-credit-link {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-decoration: none;
-    color: var(--bodyTextColor);
-  }
-  #cs-footer-1763 .cs-credit {
-    width: 100%;
-  }
-  #cs-footer-1763 .cs-credit-link {
-    font-size: 1rem;
-    line-height: 1.5em;
-    text-decoration: none;
-    width: auto;
-    margin: 0;
-    display: inline-block;
-    position: relative;
-  }
-  #cs-footer-1763 .cs-credit-link:hover {
-    color: var(--primary);
-  }
-  #cs-footer-1763 .cs-bottom-links {
-    width: 100%;
-    display: flex;
-  }
-  #cs-footer-1763 .cs-bottom-link {
-    display: flex;
-    align-items: center;
-  }
-  #cs-footer-1763 .cs-bottom-link:hover {
-    color: var(--primary);
-  }
-  #cs-footer-1763 .cs-bottom-link:last-of-type:before {
-    /* separator */
-    content: "";
-    width: 1px;
-    height: 0.875rem;
-    margin: 0 0.75rem;
-    background: currentColor;
-    opacity: 1;
-    display: block;
-  }
-  #cs-footer-1763 .cs-graphic {
-    width: 100%;
-    min-width: 120rem;
-    height: auto;
-    object-fit: cover;
-    position: absolute;
-    top: 9rem;
-    left: 50%;
-    z-index: -1;
-    transform: translateX(-50%);
-  }
-  #cs-footer-1763 .cs-light {
-    display: block;
-  }
-  #cs-footer-1763 .cs-dark {
-    display: none;
-  }
+  padding-bottom: clamp(1.875rem, 5vw, 3.125rem);
+  /* change this to match the color of the section above the footer */
+  background-color: #fff;
+  overflow: hidden;
+  /* 30px - 50px */
+  position: relative;
+  z-index: 1;
+}
+#cs-footer-1763 .cs-card-group {
+  /* reset on tablet */
+  max-width: 34.375rem;
+  margin: 30px auto;
+  /* 60px - 100px*/
+  padding: 0 0 clamp(3.75rem, 7vw, 6.25rem) 0;
+  display: grid;
+  /* 20px - 58px */
+  gap: clamp(1.25rem, 4vw, 3.625rem);
+}
+#cs-footer-1763 .cs-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* 16px - 24px */
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+#cs-footer-1763 .cs-picture {
+  padding: 1.5rem;
+  background-color:#1763C2;
+  display: block;
+  border-radius: 5px;
+}
+#cs-footer-1763 .cs-icon {
+  width: 2rem;
+  height: auto;
+  display: block;
+}
+#cs-footer-1763 .cs-h3 {
+  /* 20px - 25px */
+  font-size: clamp(1.25rem, 2vw, 1.5625rem);
+  font-weight: 700;
+  line-height: 1.2em;
+  margin: 0;
+  color: var(--headerColor);
+}
+#cs-footer-1763 .cs-card-info {
+  font-size: 1rem;
+  text-decoration: none;
+  line-height: 1.5em;
+  color: var(--bodyTextColor);
+  display: block;
+}
+#cs-footer-1763 .cs-container {
+  width: 100%;
+  /* reset on tablet */
+  max-width: 34.375rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  /* 32px - 48px */
+  gap: clamp(2rem, 7vw, 3rem);
+}
+#cs-footer-1763 .cs-logo-group {
+  /* takes up all the space, lets the other ul's wrap below it */
+  width: 100%;
+  position: relative;
+  border-radius: 5px;
+}
+#cs-footer-1763 .cs-logo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 0 1rem 0;
+  display: block;
+}
+#cs-footer-1763 .cs-text {
+  max-width: 44rem;
+  /* 24px - 40px */
+  margin: 0 0 clamp(1.5rem, 4vw, 2.5rem);
+  opacity: 0.8;
+}
+#cs-footer-1763 .cs-logo-img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+}
+#cs-footer-1763 .cs-contact {
+  display: grid;
+  gap: 2rem;
+}
+#cs-footer-1763 .cs-topper {
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+#cs-footer-1763 .cs-contact-link {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2em;
+  text-decoration: none;
+  color: var(--headerColor);
+}
+#cs-footer-1763 .cs-header {
+  /* 20px - 25px */
+  font-size: clamp(1.25rem, 3vw, 1.5625rem);
+  font-weight: 700;
+  line-height: 1.5em;
+  /* 16px - 24px */
+  margin: 0 0 clamp(1rem, 4vw, 1.5rem) 0;
+  color: var(--headerColor);
+  display: block;
+  position: relative;
+}
+#cs-footer-1763 .cs-ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+#cs-footer-1763 .cs-li {
+  list-style: none;
+}
+#cs-footer-1763 .cs-link {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-align: left;
+  text-decoration: none;
+  color: var(--bodyTextColor);
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  transition: color 0.3s;
+}
+#cs-footer-1763 .cs-link:hover {
+  color: var(--primaryLight);
+}
+#cs-footer-1763 .cs-bottom {
+  width: 100%;
+  max-width: 80rem;
+  /* 60px - 80px */
+  margin: clamp(3.75rem, 7vw, 5rem) auto 0;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-border-10, #e8e8e8);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+#cs-footer-1763 .cs-credit,
+#cs-footer-1763 .cs-bottom-link,
+#cs-footer-1763 .cs-credit-link {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-decoration: none;
+  color: var(--bodyTextColor);
+}
+#cs-footer-1763 .cs-credit {
+  width: 100%;
+}
+#cs-footer-1763 .cs-credit-link {
+  font-size: 1rem;
+  line-height: 1.5em;
+  text-decoration: none;
+  width: auto;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+#cs-footer-1763 .cs-credit-link:hover {
+  color: var(--primary);
+}
+#cs-footer-1763 .cs-bottom-links {
+  width: 100%;
+  display: flex;
+}
+#cs-footer-1763 .cs-bottom-link {
+  display: flex;
+  align-items: center;
+}
+#cs-footer-1763 .cs-bottom-link:hover {
+  color: var(--primary);
+}
+#cs-footer-1763 .cs-bottom-link:last-of-type:before {
+  /* separator */
+  content: "";
+  width: 1px;
+  height: 0.875rem;
+  margin: 0 0.75rem;
+  background: currentColor;
+  opacity: 1;
+  display: block;
+}
+#cs-footer-1763 .cs-graphic {
+  width: 100%;
+  min-width: 120rem;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 9rem;
+  left: 50%;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+#cs-footer-1763 .cs-light {
+  display: block;
+}
+#cs-footer-1763 .cs-dark {
+  display: none;
+}
+
+/* Add this to handle dropdown services */
+#cs-footer-1763 .cs-drop-ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+#cs-footer-1763 .cs-drop3-main {
+  margin-top: 1rem;
+}
+
+#cs-footer-1763 .cs-drop-link {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+#cs-footer-1763 .cs-drop3 {
+  padding: 0;
+  margin: 0 0 1rem 1rem;
+}
+
+#cs-footer-1763 .cs-drop-li3 {
+  list-style: none;
+  margin-bottom: 0.25rem;
+}
+
+/* Services section */
+#cs-footer-1763 .cs-services-section {
+  width: 100%;
+  grid-column: 1 / -1;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
 }
 /* Tablet - 600px */
 @media only screen and (min-width: 37.5rem) {
-  #cs-footer-1763 .cs-card-group {
-    max-width: 80rem;
-  }
-  #cs-footer-1763 .cs-container {
-    padding: var(--sectionPadding);
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-    max-width: 80rem;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  #cs-footer-1763 .cs-logo-group {
-    grid-column: span 12;
-  }
-  #cs-footer-1763 .cs-ul-wrapper {
-    grid-column: span 4;
-  }
-  #cs-footer-1763 .cs-contact {
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: span 12;
-  }
-  #cs-footer-1763 .cs-table {
-    grid-column: span 12;
-  }
-  #cs-footer-1763 .cs-bottom {
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-  #cs-footer-1763 .cs-credit {
-    text-align: left;
-  }
-  #cs-footer-1763 .cs-bottom-links {
-    justify-content: flex-end;
-  }
+#cs-footer-1763 .cs-card-group {
+  max-width: 80rem;
+}
+#cs-footer-1763 .cs-container {
+  padding: var(--sectionPadding);
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  max-width: 80rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+#cs-footer-1763 .cs-logo-group {
+  grid-column: span 12;
+}
+#cs-footer-1763 .cs-ul-wrapper {
+  grid-column: span 4;
+}
+#cs-footer-1763 .cs-contact {
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: span 12;
+}
+#cs-footer-1763 .cs-table {
+  grid-column: span 12;
+}
+#cs-footer-1763 .cs-bottom {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#cs-footer-1763 .cs-credit {
+  text-align: left;
+}
+#cs-footer-1763 .cs-bottom-links {
+  justify-content: flex-end;
+}
+
+/* New styles for service columns */
+#cs-footer-1763 .cs-services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+#cs-footer-1763 .cs-service-column {
+  margin-bottom: 1rem;
+}
+
+/* Full width services section */
+#cs-footer-1763 .cs-services-section {
+  grid-column: 1 / -1;
+  width: 100%;
+}
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #cs-footer-1763 .cs-card-group {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-  }
-  #cs-footer-1763 .cs-card {
-    grid-column: span 4;
-  }
-  #cs-footer-1763 .cs-logo-group {
-    grid-column: span 4;
-  }
-  #cs-footer-1763 .cs-ul-wrapper {
-    grid-column: span 4;
-  }
-  #cs-footer-1763 .cs-contact {
-    display: flex;
-    flex-direction: column;
-    grid-column: span 4;
-  }
+#cs-footer-1763 .cs-card-group {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
-                                
+#cs-footer-1763 .cs-card {
+  grid-column: span 4;
+}
+#cs-footer-1763 .cs-logo-group {
+  grid-column: span 4;
+}
+#cs-footer-1763 .cs-ul-wrapper {
+  grid-column: span 4;
+}
+#cs-footer-1763 .cs-contact {
+  display: flex;
+  flex-direction: column;
+  grid-column: span 4;
+}
+
+/* Enhanced columns for desktop */
+#cs-footer-1763 .cs-services-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+}
+                              
 </style>
 
 <footer id="cs-footer-1763">
 
-    <!-- Logo Group -->
-    <div class="cs-logo-group" style="margin: 0px auto 80px; max-width: 80rem;">
-        <a aria-label="go back to home" class="cs-logo" href="">
-            <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.jpg" alt="logo" width="240" height="32">
-        </a>
-        
-    </div>
+  <!-- Logo Group -->
+  <div class="cs-logo-group" style="margin: 0px auto 80px; max-width: 80rem;">
+      <a aria-label="go back to home" class="cs-logo" href="">
+          <img class="cs-logo-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/logo.jpg" alt="logo" width="240" height="32">
+      </a>
+      
+  </div>
 
-    <!--Contact Info-->
-    <div class="cs-card-group"  style="border-bottom: 1px solid #eee;">
-
-
-
-        
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">Location</h3>
-                <span class="cs-card-info">
-                    
-                    {{client.address.lineOne}}<BR>
-                    {{client.address.city}}
-                    {{client.address.state}}<BR>
-                    {{client.address.zip}}
+  <!--Contact Info-->
+  <div class="cs-card-group"  style="border-bottom: 1px solid #eee;">
+      <div class="cs-card">
+          <picture class="cs-picture">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-location-pin.svg" alt="location" loading="lazy" decoding="async" height="32" width="32">
+          </picture>
+          <div class="cs-flex">
+              <h3 class="cs-h3">Location</h3>
+              <span class="cs-card-info">
+                  
+                  {{client.address.lineOne}}<BR>
+                  {{client.address.city}}
+                  {{client.address.state}}<BR>
+                  {{client.address.zip}}
+              </span>
+          </div>
+      </div>
+      <div class="cs-card">
+          <picture class="cs-picture">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
+          </picture>
+          <div class="cs-flex">
+              <h3 class="cs-h3">Open 7 Days a Week</h3>
+              <span class="cs-card-info">Mon - Sat 10:00 am - 9:00pm
                 </span>
-            </div>
-        </div>
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-clock.svg" alt="clock" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">24 Hour Check In</h3>
-                <span class="cs-card-info">Check In Time: 3:00 PM
-                  </span>
-                <span class="cs-card-info">Check Out Time: 11:00 AM </span>
-            </div>
-        </div>
-        <div class="cs-card">
-            <picture class="cs-picture">
-                <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
-            </picture>
-            <div class="cs-flex">
-                <h3 class="cs-h3">Contact Us</h3>
-                <a href="tel:{{client.phoneForTel}}" class="cs-card-info">{{client.phoneForTel}} </a>
-             
-            </div>
-        </div>
-        <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
-        <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
-    </div>
-    <div class="cs-container" style="padding-top: 30px;">
-        <!-- Logo Group -->
-
-        <!-- Links -->
-        <div class="cs-ul-wrapper" >
-            <span class="cs-header">Quick Doc Urgent Care</span>
-            <ul id="cs-expanded" class="cs-ul">
-              <li class="cs-li">
-                  <a href="/" class="cs-li-link {{ 'cs-active' if '/' == page.url }}">
-                      Home
-                  </a>
-              </li>
-    
-              <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
-              <li class="cs-li cs-dropdown" tabindex="0">
-                  <span class="cs-li-link {{ 'cs-active' if 'services' == page.fileSlug }} cs-dropdown-toggle">
-                      Services
-                      <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                  </span>
-                  <ul class="cs-drop-ul">
-                      <a href="/services" class="cs-li-link cs-drop-link">
-                          View All Services
-                      </a>
-                  
-                      <li class="cs-drop-li cs-drop3-main">
-                          <span class="cs-li-link cs-drop-link">
-                              🚑 Emergency Services
-                              <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </span>
-                          <ul class="cs-drop3">
-                              <li class="cs-drop-li3"><a href="/services/#urgent-care" class="cs-li-link cs-drop-link cs-drop-link3">Adult & Pediatric Urgent Care Services</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#cold-flu" class="cs-li-link cs-drop-link cs-drop-link3">Cold, Flu & Viral Symptoms</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#nausea" class="cs-li-link cs-drop-link cs-drop-link3">Nausea, Vomiting & Diarrhea</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#ent-infections" class="cs-li-link cs-drop-link cs-drop-link3">Ear, Nose & Throat Infections</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#dehydration" class="cs-li-link cs-drop-link cs-drop-link3">Dehydration & IV Therapy</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#minor-burns" class="cs-li-link cs-drop-link cs-drop-link3">Management of Minor Burns</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#rashes-allergies" class="cs-li-link cs-drop-link cs-drop-link3">Rashes & Allergic Reactions</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#asthma" class="cs-li-link cs-drop-link cs-drop-link3">Asthma Treatments</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#migraine" class="cs-li-link cs-drop-link cs-drop-link3">Migraine Treatment</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#wound-care" class="cs-li-link cs-drop-link cs-drop-link3">Laceration Repair & Wound Care</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#abscess" class="cs-li-link cs-drop-link cs-drop-link3">Incision & Drainage of Abscesses</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#orthopedics" class="cs-li-link cs-drop-link cs-drop-link3">Orthopedics</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#sprains-strains" class="cs-li-link cs-drop-link cs-drop-link3">Sprains & Strains</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#physicals" class="cs-li-link cs-drop-link cs-drop-link3">School & Sport Physicals</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#auto-accidents" class="cs-li-link cs-drop-link cs-drop-link3">Auto Accidents</a></li>
-                          </ul>
-                      </li>
-                  
-                      <li class="cs-drop-li cs-drop3-main">
-                          <span class="cs-li-link cs-drop-link">
-                              🔬 Diagnostic Services
-                              <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </span>
-                          <ul class="cs-drop3">
-                              <li class="cs-drop-li3"><a href="/services/#digital-xrays" class="cs-li-link cs-drop-link cs-drop-link3">Digital X-Rays</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#ekg" class="cs-li-link cs-drop-link cs-drop-link3">EKG’s</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#lab-work" class="cs-li-link cs-drop-link cs-drop-link3">Lab Work</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#std-testing" class="cs-li-link cs-drop-link cs-drop-link3">STD Testing</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#flu-strep" class="cs-li-link cs-drop-link cs-drop-link3">Flu / Strep Testing</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#drug-testing" class="cs-li-link cs-drop-link cs-drop-link3">Drug Testing</a></li>
-                          </ul>
-                      </li>
-                  
-                      <li class="cs-drop-li cs-drop3-main">
-                          <span class="cs-li-link cs-drop-link">
-                              🩺 Wellness Services (By Appointment)
-                              <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </span>
-                          <ul class="cs-drop3">
-                              <li class="cs-drop-li3"><a href="/services/#iv-vitamin" class="cs-li-link cs-drop-link cs-drop-link3">IV Vitamin/Mineral Therapies</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#iv-chelation" class="cs-li-link cs-drop-link cs-drop-link3">IV Chelation</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#weight-loss" class="cs-li-link cs-drop-link cs-drop-link3">Weight Loss / Detox Programs</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#hormone-optimization" class="cs-li-link cs-drop-link cs-drop-link3">Hormone Optimization</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#medical-marijuana" class="cs-li-link cs-drop-link cs-drop-link3">Medical Marijuana Evaluations</a></li>
-                          </ul>
-                      </li>
-                  
-                      <li class="cs-drop-li cs-drop3-main">
-                          <span class="cs-li-link cs-drop-link">
-                              🏢 Employer Services
-                              <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </span>
-                          <ul class="cs-drop3">
-                              <li class="cs-drop-li3"><a href="/services/#work-injuries" class="cs-li-link cs-drop-link cs-drop-link3">Work Related Injury Treatment</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#return-to-work" class="cs-li-link cs-drop-link cs-drop-link3">Return to Work Evaluations</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#fitness-eval" class="cs-li-link cs-drop-link cs-drop-link3">Fitness for Duty Evaluations</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#workers-comp" class="cs-li-link cs-drop-link cs-drop-link3">Worker’s Comp Case Management</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#specialist-referrals" class="cs-li-link cs-drop-link cs-drop-link3">Subspecialty Referrals</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#light-duty" class="cs-li-link cs-drop-link cs-drop-link3">Light Duty Program Development</a></li>
-                          </ul>
-                      </li>
-                  
-                      <li class="cs-drop-li cs-drop3-main">
-                          <span class="cs-li-link cs-drop-link">
-                              Additional Services
-                              <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
-                          </span>
-                          <ul class="cs-drop3">
-                              <li class="cs-drop-li3"><a href="/services/#immigration-exam" class="cs-li-link cs-drop-link cs-drop-link3">Immigration Exam</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#preop-clearance" class="cs-li-link cs-drop-link cs-drop-link3">Pre-operative Clearance</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#employment-physicals" class="cs-li-link cs-drop-link cs-drop-link3">Employment Physicals</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#specialist-referrals2" class="cs-li-link cs-drop-link cs-drop-link3">Specialist Referrals</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#hormone-optimization2" class="cs-li-link cs-drop-link cs-drop-link3">Hormone Optimization</a></li>
-                              <li class="cs-drop-li3"><a href="/services/#medical-marijuana2" class="cs-li-link cs-drop-link cs-drop-link3">Medical Marijuana Evaluations</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-                  
-              </li>
-              <li class="cs-li">
-                  <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
-                      About Us
-                  </a>
-              </li>
-              <li class="cs-li">
-                  <a href="/about" class="cs-li-link {{ 'cs-active' if 'about' == page.fileSlug }}">
-                      Before You Visit
-                  </a>
-              </li>
-       
-              <li class="cs-li">
-                  <a href="/contact" class="cs-li-link {{ 'cs-active' if 'contact' == page.fileSlug }}">
-                     Contact 
-                  </a>
-              </li>
-                          
-          </ul>
-        </div>
-
-        <div class="cs-ul-wrapper">
-        
-        </div>
-        <div class="cs-contact">
-            <div class="cs-contact-info">
-                <span class="cs-header">Follow Us</span>
-                {% include 'components/social-links.html' %}
-            </div>
-        
-       
-        </div>
-    </div>
-    <div class="cs-bottom">
-        <span class="cs-credit">
-            © Copyright - <a href="/" class="cs-credit-link" target="_blank">{{client.name}}</a>
-        </span>
-        <div class="cs-bottom-links">
-          <STYLE>
-            .credit {color:white; text-align: left;}
-            .gandalfpill {border:.5px solid #eee; transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
-        .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
-        .gandalfpill:hover {box-shadow:2px 2px #FFF; background-color: black;  transform: translateY(-5px); transition: all ease .2s; ;}
-        .back2top {font-size:2px}
-        </STYLE>
-        <div class="credit">
-            <span style="color: black; font-size: 12px;">Website by</span>
+              <span class="cs-card-info">Sun 10:00 am - 5:00 pm  </span>
+          </div>
+      </div>
+      <div class="cs-card">
+          <picture class="cs-picture">
+              <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/gym-footer-call.svg" alt="phone" loading="lazy" decoding="async" height="32" width="32">
+          </picture>
+          <div class="cs-flex">
+              <h3 class="cs-h3">Call Now to Schedule</h3>
+              <a href="tel:{{client.phoneForTel}}" class="cs-card-info">{{client.phoneForTel}} </a>
            
-            <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
-        </div>
-        </div>
-    </div>
+          </div>
+      </div>
+      <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+      <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/long-texture-dark.svg" alt="graphic" height="151" width="1920" loading="lazy" decoding="async">
+  </div>
+  <div class="cs-container" style="padding-top: 30px;">
+      <!-- Logo Group -->
+
+      <!-- Links -->
+      <div class="cs-ul-wrapper" >
+          <span class="cs-header">Quick Doc Urgent Care</span>
+          <ul id="cs-expanded" class="cs-ul">
+            <li class="cs-li">
+                <a href="/" class="cs-link">
+                    Home
+                </a>
+            </li>
+  
+            <li class="cs-li">
+                <a href="/services" class="cs-link">
+                    Services
+                </a>
+            </li>
+            <li class="cs-li">
+                <a href="/about" class="cs-link">
+                    About Us
+                </a>
+            </li>
+            <li class="cs-li">
+                <a href="/about" class="cs-link">
+                    Before You Visit
+                </a>
+            </li>
+     
+            <li class="cs-li">
+                <a href="/contact" class="cs-link">
+                   Contact 
+                </a>
+            </li>
+            
+            <li class="cs-li">
+                <span class="cs-header" style="margin-top: 2rem;">Follow Us</span>
+                {% include 'components/social-links.html' %}
+            </li>
+                        
+        </ul>
+      </div>
+
+      <!-- Services section - now spans full width -->
+      <div class="cs-services-section">
+          <span class="cs-header">Our Services</span>
+          <div class="cs-services-grid">
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">🚑 Emergency Services</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#urgent-care" class="cs-link">Adult & Pediatric Urgent Care</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#cold-flu" class="cs-link">Cold, Flu & Viral Symptoms</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#nausea" class="cs-link">Nausea & Vomiting</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#ent-infections" class="cs-link">ENT Infections</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#dehydration" class="cs-link">IV Therapy</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">🔬 Diagnostic Services</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#digital-xrays" class="cs-link">Digital X-Rays</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#ekg" class="cs-link">EKG's</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#lab-work" class="cs-link">Lab Work</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#std-testing" class="cs-link">STD Testing</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#flu-strep" class="cs-link">Flu / Strep Testing</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">🩺 Wellness Services</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#iv-vitamin" class="cs-link">IV Vitamin/Mineral Therapies</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#iv-chelation" class="cs-link">IV Chelation</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#weight-loss" class="cs-link">Weight Loss Programs</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#hormone-optimization" class="cs-link">Hormone Optimization</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">🏢 Employer Services</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#work-injuries" class="cs-link">Work Injury Treatment</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#return-to-work" class="cs-link">Return to Work Evaluations</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#fitness-eval" class="cs-link">Fitness for Duty Evaluations</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#workers-comp" class="cs-link">Worker's Comp Management</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">Physicals & Exams</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#immigration-exam" class="cs-link">Immigration Exam</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#preop-clearance" class="cs-link">Pre-operative Clearance</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#employment-physicals" class="cs-link">Employment Physicals</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#physicals" class="cs-link">School & Sport Physicals</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">Treatments</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#minor-burns" class="cs-link">Minor Burns</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#rashes-allergies" class="cs-link">Rashes & Allergic Reactions</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#asthma" class="cs-link">Asthma Treatments</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#migraine" class="cs-link">Migraine Treatment</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">Injuries & Wounds</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#wound-care" class="cs-link">Laceration & Wound Care</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#abscess" class="cs-link">Incision & Drainage</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#orthopedics" class="cs-link">Orthopedics</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#sprains-strains" class="cs-link">Sprains & Strains</a></li>
+                  </ul>
+              </div>
+              
+              <div class="cs-service-column">
+                  <span class="cs-drop-link">Specialized Care</span>
+                  <ul class="cs-drop3">
+                      <li class="cs-drop-li3"><a href="/services/#auto-accidents" class="cs-link">Auto Accidents</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#specialist-referrals2" class="cs-link">Specialist Referrals</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#medical-marijuana2" class="cs-link">Medical Marijuana Evaluations</a></li>
+                      <li class="cs-drop-li3"><a href="/services/#drug-testing" class="cs-link">Drug Testing</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="cs-bottom">
+      <span class="cs-credit">
+          © Copyright - <a href="/" class="cs-credit-link" target="_blank">{{client.name}}</a>
+      </span>
+      <div class="cs-bottom-links">
+        <STYLE>
+          .credit {color:white; text-align: left;}
+          .gandalfpill {border:.5px solid #eee; transition: all ease .2s;margin-left:5px;vertical-align:middle;  display: inline-block; background-color: white; padding:0 8px; border-radius: 999px;}
+      .gandalfpill:hover img {filter: grayscale(1) brightness(1000%);transition: all ease .8s;}
+      .gandalfpill:hover {box-shadow:2px 2px #FFF; background-color: black;  transform: translateY(-5px); transition: all ease .2s; ;}
+      .back2top {font-size:2px}
+      </STYLE>
+      <div class="credit">
+          <span style="color: black; font-size: 12px;">Website by</span>
+         
+          <a target="_blank" class="gandalfpill" href="https://designgandalf.com/"><img style="vertical-align:middle; " loading="lazy" decoding="async" src="/assets/svgs/gandalflogo.svg" alt="logo" height="12"></a>
+      </div>
+      </div>
+  </div>
 </footer>
-                                
