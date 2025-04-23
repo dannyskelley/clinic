@@ -1,77 +1,154 @@
 <!-- ============================================ -->
-<!--                     CTA                      -->
+<!--                    CTA                       -->
 <!-- ============================================ -->
 
-<section id="cta-697">
-  <div class="cs-container">
-      <div class="cs-content">
-          <h2 class="cs-title">Book your stay today!</h2>
-          {% include 'components/cta_button.html' %}
-
-      </div>
-  </div>
-  <!--SVG Waves Background-->
-  <img class="cs-background" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FGraphics%2Fwaves-3.svg" alt="wave graphic" width="1920" height="318" loading="lazy" decoding="async" aria-hidden="true">
-</section>
-                              
-
 <style>
-
   /*-- -------------------------- -->
 <---            CTA             -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #cta-697 {
+  #cta-262 {
     padding: var(--sectionPadding);
-    background-color: var(--secondary);
-    position: relative;
-    z-index: 1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--band);
   }
-  #cta-697 .cs-container {
+  #cta-262 .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
+    /* 32px - 88px top & bottom */
+    /* 24px - 88px left & right */
+    padding: clamp(2em, 6.3vw, 5.5em) clamp(1.5em, 5.7vw, 5.5em);
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
+    align-items: flex-start;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    /* clips the corners for the border radius to show */
+    overflow: hidden;
+    z-index: 1;
+    /* prevents padding from adding to height and width */
+    box-sizing: border-box;
   }
-  #cta-697 .cs-content {
-    /* set text align to left if content needs to be left aligned */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
-    /* 48px - 64px */
-    gap: clamp(3rem, 6vw, 4rem);
-  }
-  #cta-697 .cs-title {
-    color: var(--bodyTextColorWhite);
-  }
-  
-  #cta-697 .cs-background {
+  #cta-262 .cs-background {
     width: 100%;
     height: 100%;
-    display: block;
     position: absolute;
     top: 0;
     left: 0;
+    display: block;
     z-index: -1;
-    /* makes it act like a background image */
+  }
+  #cta-262 .cs-background:before {
+    /* black overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.7;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #cta-262 .cs-background:after {
+    /* brown overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  #cta-262 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
   }
+  #cta-262 .cs-left-section {
+    max-width: 57.125rem;
+  }
+  #cta-262 .cs-title {
+    color: var(--bodyTextColorWhite);
+    margin-bottom: 30px;
+  }
+
+  #cta-262 .cs-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* 12px - 20px */
+    gap: clamp(0.75rem, 1.6vw, 1.25rem);
+  }
+  #cta-262 .cs-header {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.4vw, 1.5625rem);
+    font-weight: bold;
+    color: var(--primaryLight);
+    display: block;
+  }
+  #cta-262 .cs-p {
+    /* 14px - 20px */
+    font-size: clamp(0.875rem, 1.5vw, 1.25rem);
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+  }
 }
-/* Small Desktop - 1024px */
-@media only screen and (min-width: 64rem) {
-  #cta-697 .cs-content {
-    text-align: left;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #cta-262 .cs-container {
     flex-direction: row;
     justify-content: space-between;
+  }
+  #cta-262 .cs-content {
+    align-items: flex-end;
+    text-align: right;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #cta-262 .cs-background:before {
+    opacity: 0.9;
+  }
+  body.dark-mode #cta-262 .cs-background:after {
+    opacity: 0.1;
   }
 }
                                 
 </style>
+
+<section id="cta-262">
+  <div class="cs-container">
+      <div class="cs-left-section">
+          <h2 class="cs-title">Sick? Hurt?<BR> We’re Here for You.</h2>
+            <span class="cs-topper" style="color: white;">Quick answers. Real care.</span>
+          <DIV style="margin-top: 60px;">
+            {% include 'components/cta_button.html' %}</DIV>
+          
+     
+      </div>
+
+      <picture class="cs-background">
+          <source media="(max-width: 600px)" srcset="/assets/images/42.jpg">
+          <source media="(min-width: 601px)" srcset="/assets/images/42.jpg">
+          <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/42.jpg" alt="appliance" width="275" height="132">
+      </picture>
+  </div>
+</section>
+                              
