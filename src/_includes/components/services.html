@@ -1,0 +1,333 @@
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<style>
+    /*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-2287 {
+    padding: var(--sectionPadding);
+    background-color: #fffcf3;
+    overflow: hidden;
+    position: relative;
+  }
+  #services-2287 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #services-2287 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #services-2287 .cs-title {
+    max-width: 18ch;
+  }
+  #services-2287 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.25rem;
+  }
+  #services-2287 .cs-item {
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    /* 32px - 60px top & bottom */
+    /* 16px - 48px sides */
+    padding: clamp(2rem, 6vw, 3.75rem) clamp(1rem, 5vw, 3rem);
+    border-bottom: 1px solid #e7e7e8;
+    grid-column: span 12;
+    grid-row: span 1;
+    position: relative;
+    z-index: 1;
+    transition: background-color 0.3s;
+  }
+  #services-2287 .cs-link {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #services-2287 .cs-icon-wrapper {
+    width: 5.5rem;
+    height: 5.5rem;
+    margin: 0 0 1.5rem 0;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #services-2287 .cs-icon {
+    width: 2.5rem;
+    height: auto;
+  }
+  #services-2287 .cs-h3 {
+    /* 20px - 25px */
+    font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0 0 0.75rem 0;
+    color: var(--headerColor);
+  }
+  #services-2287 .cs-item-text {
+    line-height: 1.5em;
+    max-width: 28.125rem;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+  }
+  #services-2287 .cs-floater {
+    /* 115px - 264px */
+    width: clamp(7.1875rem, 14vw, 16.5rem);
+    height: auto;
+    object-fit: contain;
+    position: absolute;
+    top:60px;
+    opacity: .1;;
+  }
+  #services-2287 .cs-floater-left {
+    left: calc(clamp(7.1875rem, 14vw, 16.5rem)*-0.6);
+  }
+  #services-2287 .cs-floater-right {
+    right: calc(clamp(7.1875rem, 14vw, 16.5rem)*-0.6);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-2287 .cs-card-group {
+    gap: 0;
+  }
+  #services-2287 .cs-item {
+    padding-top: 0;
+    border-right: 1px solid #e7e7e8;
+    grid-column: span 4;
+    position: relative;
+  }
+  #services-2287 .cs-item:hover {
+    background-color: #fff9e8;
+  }
+  #services-2287 .cs-item:hover .cs-link {
+    transform: translateY(0);
+  }
+  #services-2287 .cs-item:hover .cs-item-text {
+    opacity: 1;
+    visibility: visible;
+  }
+  #services-2287 .cs-item:hover .cs-icon-wrapper {
+    transform: scale(0);
+  }
+  #services-2287 .cs-item:nth-of-type(5),
+  #services-2287 .cs-item:nth-of-type(8) {
+    position: relative;
+    z-index: 100;
+    /* middle-left square */
+  }
+  #services-2287 .cs-item:nth-of-type(5)::before,
+  #services-2287 .cs-item:nth-of-type(8)::before {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--secondary);
+    position: absolute;
+    top: -0.41666667rem;
+    left: -0.41666667rem;
+    z-index: 99;
+  }
+  #services-2287 .cs-item:nth-of-type(5)::after,
+  #services-2287 .cs-item:nth-of-type(8)::after {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--secondary);
+    position: absolute;
+    top: -0.41666667rem;
+    right: -0.41666667rem;
+    z-index: 99;
+  }
+  #services-2287 .cs-item:nth-of-type(4),
+  #services-2287 .cs-item:nth-of-type(5),
+  #services-2287 .cs-item:nth-of-type(6) {
+    border-bottom: none;
+  }
+  #services-2287 .cs-item:nth-of-type(3),
+  #services-2287 .cs-item:nth-of-type(6) {
+    border-right: none;
+  }
+  #services-2287 .cs-item:nth-of-type(7),
+  #services-2287 .cs-item:nth-of-type(8),
+  #services-2287 .cs-item:nth-of-type(9) {
+    border-top: 1px solid #e7e7e8;
+    border-bottom: 0;
+  }
+  #services-2287 .cs-item:nth-of-type(9) {
+    border-right: none;
+  }
+  #services-2287 .cs-link {
+    /* same amount as the cs-item-text height */
+    transform: translateY(6rem);
+    transition: transform 0.3s;
+  }
+  #services-2287 .cs-icon-wrapper {
+    max-height: 6.25rem;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  #services-2287 .cs-item-text {
+    height: 6rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+  }
+}
+/* Large Desktop - 1700px */
+@media only screen and (min-width: 106.25rem) {
+  #services-2287 .cs-floater-right {
+    margin-right: -63.75rem;
+    right: 50%;
+  }
+  #services-2287 .cs-floater-left {
+    margin-left: -63.75rem;
+    left: 50%;
+  }
+}
+                                
+</style>
+
+<section id="services-2287">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Caring for You & Your Family</span>
+            <h2 class="cs-title">Our Services</h2>
+       
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Medical Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Illness & Injury Visits</h3>
+                    <p class="cs-item-text">
+                        Get quick care for common illnesses, minor injuries, and urgent health concerns no appointment needed.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Prescription Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Medication Refills</h3>
+                    <p class="cs-item-text">
+                        Fast prescription refills to keep your treatment on track without the long wait times.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Lab Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Lab Testing & Blood Work</h3>
+                    <p class="cs-item-text">
+                        On-site lab services for quick blood tests, screenings, and diagnostics to help you get answers faster.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="STD Testing Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">STD Testing & Treatment</h3>
+                    <p class="cs-item-text">
+                        Discreet, confidential testing and treatment for sexually transmitted infections and concerns.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Weight Loss Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Weight Loss Management</h3>
+                    <p class="cs-item-text">
+                        Personalized weight management programs to help you meet your health and wellness goals.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Vaccine Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Vaccines & Immunizations</h3>
+                    <p class="cs-item-text">
+                        Stay protected with up to date vaccines for flu, COVID-19, travel, school, and more.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="IV Therapy Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">IV Fluids & Injections</h3>
+                    <p class="cs-item-text">
+                        Immediate hydration therapy, vitamin boosts, and injectable treatments administered by medical professionals.
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Physicals Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Work, School & Sports Physicals</h3>
+                    <p class="cs-item-text">
+                        Convenient and affordable physical exams for work clearance, school enrollment, and sports participation.
+                    </p>
+                </a>
+            </li>
+
+            <li class="cs-item">
+                <a class="cs-link" href="">
+                    <picture class="cs-icon-wrapper">
+                        <img class="cs-icon" loading="lazy" decoding="async" src="/assets/images/check.svg" alt="Physicals Icon" width="48" height="48">
+                    </picture>
+                    <h3 class="cs-h3">Rapid COVID, Flu, and Strep Testing</h3>
+                    <p class="cs-item-text">
+                        Fast, accurate testing for COVID-19, influenza, and strep throat. With on site results to get you answers quickly.
+                    </p>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+    <img class="cs-floater cs-floater-left" src="/assets/images/icon.png" alt="plant" width="264" height="502" loading="lazy" decoding="async" aria-hidden="true">
+    <img class="cs-floater cs-floater-right" src="/assets/images/icon.png" alt="plant" width="264" height="502" loading="lazy" decoding="async" aria-hidden="true">
+</section>
+                                
