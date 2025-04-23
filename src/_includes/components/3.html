@@ -38,10 +38,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #why-choose-1840 .cs-text {
-    /* 12px - 24px */
-    margin-bottom: clamp(0.75rem, 4vw, 1.5rem);
-  }
+
   #why-choose-1840 .cs-ul {
     max-width: 39.375rem;
     margin: 0;
@@ -135,7 +132,7 @@
     width: 100%;
     height: 95vw;
     /* 260px - 324px */
-    min-height: clamp(16.25rem, 32vw, 20.25rem);
+    
     margin: clamp(3rem, 6vw, 4rem) 0 0;
     display: block;
     position: relative;
@@ -170,7 +167,7 @@
     height: 90%;
     max-height: 100%;
     /* 420px - 740px */
-    min-height: clamp(26.25rem, 50vw, 46.25rem);
+    
   }
   #why-choose-1840 .cs-container {
     max-width: 1400px;
@@ -204,7 +201,7 @@
   }
   #why-choose-1840 .cs-video-wrapper {
     height: auto;
-    margin-bottom: 8.75rem;
+    
   }
 }
 /* Dark Mode */
@@ -231,12 +228,12 @@
 <section id="why-choose-1840">
   <div class="cs-container">
       <div class="cs-video-wrapper">
-        <picture class="cs-picture cs-picture2">
+        <picture >
           <!--Mobile Image-->
-          <source media="(max-width: 600px)" srcset="/assets/images/3.jpg">
+          <source media="(max-width: 600px)" srcset="/assets/images/4.jpg">
           <!--Tablet and above Image-->
-          <source media="(min-width: 601px)" srcset="/assets/images/3.jpg">
-          <img loading="lazy" decoding="async" src="/assets/images/3.jpg" alt="people" width="608" height="406">
+          <source media="(min-width: 601px)" srcset="/assets/images/4.jpg">
+          <img loading="lazy" decoding="async" src="/assets/images/4.jpg" alt="people" width="608" height="406">
       </picture>
       </div>
       <div class="cs-content">
@@ -254,18 +251,8 @@
           </p>
     
           {% include 'components/cta_button.html' %}
-          <picture class="cs-picture cs-picture2">
-              <!--Mobile Image-->
-              <source media="(max-width: 600px)" srcset="/assets/images/2.jpg">
-              <!--Tablet and above Image-->
-              <source media="(min-width: 601px)" srcset="/assets/images/2.jpg">
-              <img loading="lazy" decoding="async" src="/assets/images/2.jpg" alt="people" width="608" height="406">
-          </picture>
+        
       </div>
   </div>
-  <!--White Splash Graphic-->
-  <img class="cs-graphic cs-light" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/f7-splatter.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async" >
-  <!--This is a dark version. Download the image and change the fill color to match the color of the section background below it-->
-  <img class="cs-graphic cs-dark" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/dark-mode-splatter2.svg" alt="graphic" height="161" width="1920" loading="lazy" decoding="async">
-</section>
+ </section>
                               
