@@ -28,8 +28,9 @@ order: 500
   /* Mobile - 360px */
   @media only screen and (min-width: 0rem) {
     #cs-contact-490 {
-      padding: clamp(8.25rem, 15vw, 2.75rem) 2rem;
+      padding: clamp(12.75rem, 15vw, 2.75rem) 2rem;
       padding-bottom: 50px;
+      background-color: var(--band);
     }
 
     #cs-contact-490 .cs-container {
@@ -186,18 +187,13 @@ order: 500
 
   }
 
-  @media only screen and (min-width: 900px) {
 
-    #cs-contact-490 {
-      padding: clamp(2.25rem, 15vw, 2.75rem) 2rem;
-    }
-  }
 
   /* Tablet - 700px */
   @media only screen and (min-width: 43.75rem) {
     #cs-contact-490 .cs-container {
 
-      margin-top: 150px;
+    
       max-width: 80rem;
       flex-direction: row;
       justify-content: space-between;
@@ -266,7 +262,7 @@ order: 500
   </div>
 </section>
 
-
-
+{% include 'components/testimonial.html' %}
+{% include 'components/cta.html' %}
 
 {% endblock %}
