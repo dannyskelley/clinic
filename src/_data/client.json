@@ -1,6 +1,6 @@
 {
     "name": "Qucick Doc Urgent Care",
-    "service": "Roofing",
+    "service": "Urgent Care Clinic",
     "email": "info@designgandalf.com",
     "phoneForTel": "313-395-2865",
     "phoneFormatted": "313-395-2865",
@@ -16,6 +16,6 @@
         "zip": "48125",
         "mapLink": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2952.438509752411!2d-83.28390279999999!3d42.2691619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883b498fc8727f0f%3A0x33659b7f34615f94!2sQuickdoc%20Urgent%20Care!5e0!3m2!1sen!2sus!4v1745331471904!5m2!1sen!2sus"
     },
-    "domain": "https://quickdocurgentcare.netlify.app"
+    "domain": "https://quickdocurgentcare.com/"
 }
 
