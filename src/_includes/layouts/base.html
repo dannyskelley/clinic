@@ -69,6 +69,75 @@
                 {{ client.name }}
             {% endif %}
         </title>
+
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "@id": "https://quickdocurgentcare.com/",
+  "name": "Quick Doc Urgent Care",
+  "image": "https://quickdocurgentcare.com/assets/images/logo-small.png", 
+  "url": "https://quickdocurgentcare.com/",
+  "telephone": "+1-313-395-2865",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "25340 Van Born Rd",
+    "addressLocality": "Dearborn Heights",
+    "addressRegion": "MI",
+    "postalCode": "48125",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 42.2695,
+    "longitude": -83.2906
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "10:00",
+      "closes": "21:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "10:00",
+      "closes": "17:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": 116
+  },
+  "priceRange": "$$",
+  "medicalSpecialty": [
+    "UrgentCare",
+    "PrimaryCare",
+    "Pediatrics"
+  ],
+  "department": [
+    { "@type": "MedicalBusiness", "name": "Illness & Injury Visits" },
+    { "@type": "MedicalBusiness", "name": "Medication Refills" },
+    { "@type": "MedicalBusiness", "name": "Lab Testing & Blood Work" },
+    { "@type": "MedicalBusiness", "name": "STD Testing & Treatment" },
+    { "@type": "MedicalBusiness", "name": "Vaccines & Immunizations" },
+    { "@type": "MedicalBusiness", "name": "IV Fluids & Injections" },
+    { "@type": "MedicalBusiness", "name": "Work, School & Sports Physicals" },
+    { "@type": "MedicalBusiness", "name": "Rapid COVID, Flu, and Strep Testing" },
+    { "@type": "MedicalBusiness", "name": "Weight Loss Management" }
+  ],
+  "description": "Quick Doc Urgent Care offers fast, affordable, walk-in urgent care in Dearborn Heights, MI. Open 7 days. Short wait times. Serving Dearborn, Taylor, Inkster, Garden City, and nearby communities. Most insurance accepted.",
+  "sameAs": [
+    "https://quickdocurgentcare.com/",
+    "https://www.instagram.com/quickdoc_urgentcare",
+    "https://www.facebook.com/profile.php?id=61571049931500",
+    "https://g.co/kgs/s9kfYNh"
+  ]
+}
+</script>
+
     </head>
     <body>
         <!--Screen reader skip main nav-->
