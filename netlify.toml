@@ -66,17 +66,32 @@
   status = 301
 
 [[redirects]]
-  from = "/about-us/doctors-profile/"
-  to = "/"
-  status = 301
-
-[[redirects]]
   from = "/2019/10/03/does-your-life-lack-meaning/"
   to = "/"
   status = 301
 
 [[redirects]]
   from = "/portfolio_category/grid/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio_category/gallery/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/nonummy/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/link/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/author/admin/"
   to = "/"
   status = 301
 
