@@ -6,12 +6,115 @@
   # Installs the Lighthouse Build Plugin for all deploy contexts
   package = "@netlify/plugin-lighthouse"
 
-
 [[plugins]]
-package = "netlify-plugin-cache"
-
+  package = "netlify-plugin-cache"
   [plugins.inputs]
   paths = [
     "public/assets/images", # Processed images - adjust to match your outputDir
-    ".cache" # Remote Assets
+    ".cache"                # Remote Assets
   ]
+
+# Redirect Rules
+[[redirects]]
+  from = "/clinical-services1/special-offers/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/clinical-services1/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/timetable/event/surgery-4/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/shop/cart/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/image/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/quote/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/grid/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/type/image/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about-us/contact-us/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/tag/video/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/category/medical/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about-us/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about-us/doctors-profile/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/2019/10/03/does-your-life-lack-meaning/"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/portfolio_category/grid/"
+  to = "/"
+  status = 301
+
+# Query string redirects
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 301
+  force = true
+  conditions = { Query = { p = "779" } }
+
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 301
+  force = true
+  conditions = { Query = { p = "818" } }
+
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 301
+  force = true
+  conditions = { Query = { p = "8" } }
+
+[[redirects]]
+  from = "/"
+  to = "/"
+  status = 301
+  force = true
+  conditions = { Query = { p = "783" } }
