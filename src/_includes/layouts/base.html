@@ -76,7 +76,7 @@
   "@type": "MedicalClinic",
   "@id": "https://quickdocurgentcare.com/",
   "name": "Quick Doc Urgent Care",
-  "image": "https://quickdocurgentcare.com/assets/images/logo-small.png", 
+  "image": "https://quickdocurgentcare.com/assets/images/logo-small.png"",
   "url": "https://quickdocurgentcare.com/",
   "telephone": "+1-313-395-2865",
   "address": {
@@ -117,18 +117,22 @@
     "PrimaryCare",
     "Pediatrics"
   ],
-  "department": [
-    { "@type": "MedicalBusiness", "name": "Illness & Injury Visits" },
-    { "@type": "MedicalBusiness", "name": "Medication Refills" },
-    { "@type": "MedicalBusiness", "name": "Lab Testing & Blood Work" },
-    { "@type": "MedicalBusiness", "name": "STD Testing & Treatment" },
-    { "@type": "MedicalBusiness", "name": "Vaccines & Immunizations" },
-    { "@type": "MedicalBusiness", "name": "IV Fluids & Injections" },
-    { "@type": "MedicalBusiness", "name": "Work, School & Sports Physicals" },
-    { "@type": "MedicalBusiness", "name": "Rapid COVID, Flu, and Strep Testing" },
-    { "@type": "MedicalBusiness", "name": "Weight Loss Management" }
-  ],
   "description": "Quick Doc Urgent Care offers fast, affordable, walk-in urgent care in Dearborn Heights, MI. Open 7 days. Short wait times. Serving Dearborn, Taylor, Inkster, Garden City, and nearby communities. Most insurance accepted.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Available Services",
+    "itemListElement": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Illness & Injury Visits" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Medication Refills" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Lab Testing & Blood Work" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "STD Testing & Treatment" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vaccines & Immunizations" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "IV Fluids & Injections" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Work, School & Sports Physicals" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rapid COVID, Flu, and Strep Testing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weight Loss Management" } }
+    ]
+  },
   "sameAs": [
     "https://quickdocurgentcare.com/",
     "https://www.instagram.com/quickdoc_urgentcare",
