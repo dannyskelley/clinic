@@ -56,22 +56,12 @@
   status = 301
 
 [[redirects]]
-  from = "/about-us/contact-us/"
-  to = "/"
-  status = 301
-
-[[redirects]]
   from = "/tag/video/"
   to = "/"
   status = 301
 
 [[redirects]]
   from = "/category/medical/"
-  to = "/"
-  status = 301
-
-[[redirects]]
-  from = "/about-us/"
   to = "/"
   status = 301
 
